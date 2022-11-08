@@ -5,9 +5,7 @@ game();
 
 function game(){
     console.log("Lets play rock paper scissors");
-    for(i = 0; i < 5; i++){
-        playRound(getPlayerChoice(), getComputerChoice());
-    }
+
     if(playerCount > computerCount){
         console.log(`You won ${playerCount} times, you win`);
     } else if(playerCount === computerCount){

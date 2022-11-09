@@ -1,0 +1,18 @@
+html, body{
+    height: 100%;
+}
+
+
+.wrapper{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-header{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

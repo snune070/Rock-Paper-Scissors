@@ -1,19 +1,15 @@
 let computerCount = 0;
 let playerCount = 0;
 
-game();
 
-function game(){
-    console.log("Lets play rock paper scissors");
+const myButton = document.querySelectorAll('button');
 
-    if(playerCount > computerCount){
-        console.log(`You won ${playerCount} times, you win`);
-    } else if(playerCount === computerCount){
-        console.log("its a tie");
-    } 
-    else{
-        console.log(`You lost ${computerCount} time, you lose `);
-    }
+for (let myButtonElement of myButton) {
+    myButtonElement.addEventListener('click', function () {
+        let choice = document.getElementById(this.id);
+        myButtonElement = choice.textContent.toLowerCase();
+        playRound(myButtonElement, getComputerChoice());
+    })
 }
 
 function playRound(playerInput, computerInput){
@@ -44,19 +40,15 @@ function playRound(playerInput, computerInput){
     } else if(playerInput === "scissors" && computerInput === "scissors") {
         return console.log("Its a tie! you both picked scissors");
     } else {
-        return console.log("Thats not a proper input");
+        return console.log("That's not a proper input");
     }
 }
-
-function getPlayerChoice(){
-   return prompt("Rock, Paper, Or Scissors").toLowerCase();
-    
-}
-
 function getComputerChoice(){
-    let randomChoice = Math.floor(Math.random() * 100) + 1;
 
+
+    let randomChoice = Math.floor(Math.random() * 100) + 1;
     if(randomChoice <= 33){
+
         return "rock";
     } else if(randomChoice > 33 && randomChoice <= 66) {
         return "paper";
@@ -64,3 +56,4 @@ function getComputerChoice(){
         return "scissors";
     }
 }
+

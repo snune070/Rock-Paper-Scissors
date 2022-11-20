@@ -1,5 +1,8 @@
 html, body{
     height: 100%;
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', 'sans-serif';
+    color: white;
 }
 
 
@@ -16,3 +19,18 @@ html, body{
     align-items: center;
     justify-content: space-between;
 }
+
+.lower-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.options{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+

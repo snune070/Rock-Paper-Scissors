@@ -14,10 +14,28 @@ html, body{
 }
 
 .score-header{
+    border: 1px solid hsl(217, 16%, 45%);
+    border-radius: 24px;
+    padding: 20px;
     width: 700px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+.tracker{
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lower-wrapper{

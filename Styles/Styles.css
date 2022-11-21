@@ -50,5 +50,29 @@ html, body{
     width: 300px;
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 }
 
+#rock{
+    padding: 15px;
+    border: 10px solid transparent;
+    background: linear-gradient(white, white) padding-box,radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px;
+}
+
+#paper{
+    padding: 15px;
+    border: 10px solid transparent;
+    background: linear-gradient(white, white) padding-box, radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px;
+}
+
+#scissors{
+    padding: 15px;
+    border: 10px solid transparent;
+    background: linear-gradient(white, white) padding-box, radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px;
+}

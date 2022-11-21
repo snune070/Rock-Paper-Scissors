@@ -3,8 +3,6 @@ let playerCount = 0;
 let roundCounter = 0;
 const myButton = document.querySelectorAll('button');
 
-console.log(roundCounter);
-
 for (let myButtonElement of myButton) {
     myButtonElement.addEventListener('click', function () {
         let choice = document.getElementById(this.id);
@@ -16,17 +14,9 @@ for (let myButtonElement of myButton) {
             else
                 alert('you lose')
         }
-        console.log(roundCounter)
     })
 }
 
-
-if(roundCounter >= 5){
-    if(playerCount > computerCount)
-        alert('you win')
-    else
-        alert('you lose')
-}
 
 function playRound(playerInput, computerInput){
 
@@ -37,6 +27,7 @@ function playRound(playerInput, computerInput){
         computerCount++;
         computerScore.innerText = `${computerCount}`;
         roundCounter++;
+        console.log("You Lose Paper Beats Rock")
     } else if(playerInput === "rock" && computerInput === "scissors"){
         playerCount++;
         playerScore.innerText = `${playerCount}`;
